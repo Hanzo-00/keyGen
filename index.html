@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اشترك في قناتنا على يوتيوب</title>
+    <title>KeyGen</title>
     
 
     <style>
@@ -208,8 +210,8 @@
 <body>
     <div class="container">
         <div class="form-container">
-            <h2>اشترك في قناتنا على يوتيوب لتتلقى كل جديد</h2>
-            <h2>Subscribe to our YouTube channel to receive all the latest news</h2>
+            <h2>عليك الاشتراك في قناه اليوتيوب لعمل الاكواد بشكل صحيح</h2>
+            <h2>You must subscribe to the YouTube channel to make the codes correctly</h2>
 
             <label for="appSelect"> Choose the service type:
 ....اختر نوع الخدمة:</label>
@@ -221,12 +223,54 @@
             </select>
             <button onclick="generateKeys()">Click here to drop the codes....اضغط هنا لاسخراج الاكواد</button>
         </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عد تنازلي</title>
+    <style>
+        .countdown {
+            font-family: Arial, sans-serif;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown" id="countdown">
+        02:00
+    </div>
+
+    <script>
+        // تعيين الوقت المبدئي (دقيقتين)
+        const countdownElement = document.getElementById('countdown');
+        let time = 120; // الوقت بالثواني (120 ثانية = 2 دقيقة)
+
+        function updateCountdown() {
+            const minutes = Math.floor(time / 60);
+            const seconds = time % 60;
+            countdownElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            time--;
+
+            if (time < 0) {
+                clearInterval(timerInterval);
+                countdownElement.textContent = "انتهت المدة";
+            }
+        }
+
+        const timerInterval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
 
         <div class="form-container">
             <h2> key .... الاكواد</h2>
             <pre id="jsonDataDisplay" class="key-display"></pre>
         </div>
     </div>
+
 
     <script>
         const appConfigs = {
@@ -441,6 +485,7 @@
             findValidKeys(NUM_KEYS_TO_GENERATE);
         }
     </script>
+    
 </body>
 </html>
 <!DOCTYPE html>
@@ -455,7 +500,7 @@
     <h1>Video clip from our YouTube channel
 </h1>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ygk037wh7Ug" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
 </body>
